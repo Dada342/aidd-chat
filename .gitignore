@@ -28,3 +28,7 @@ tsconfig.tsbuildinfo
 
 # AIDD mono-repo (outil bootcamp, pas partie du projet)
 aidd/
+.env*
+
+# Résumés de session Claude Code (notes de travail locales)
+sessions/
