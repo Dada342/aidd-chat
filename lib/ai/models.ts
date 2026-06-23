@@ -1,4 +1,4 @@
-export const DEFAULT_CHAT_MODEL = "moonshotai/kimi-k2.5";
+export const DEFAULT_CHAT_MODEL = "mistral/mistral-large-latest";
 
 export const titleModel = {
   id: "moonshotai/kimi-k2.5",
@@ -24,6 +24,12 @@ export type ChatModel = {
 };
 
 export const chatModels: ChatModel[] = [
+  {
+    id: "mistral/mistral-large-latest",
+    name: "Mistral Large",
+    provider: "mistral",
+    description: "Mistral flagship model",
+  },
   {
     id: "deepseek/deepseek-v3.2",
     name: "DeepSeek V3.2",
