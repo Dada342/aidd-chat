@@ -4,7 +4,9 @@ import { isTestEnvironment } from "../constants";
 import { titleModel } from "./models";
 
 function getMistralProvider() {
-  if (!process.env.MISTRAL_API_KEY) return null;
+  if (!process.env.MISTRAL_API_KEY) {
+    return null;
+  }
   return createMistral({ apiKey: process.env.MISTRAL_API_KEY });
 }
 
